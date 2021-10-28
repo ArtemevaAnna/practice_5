@@ -1,0 +1,11 @@
+def mostchar(word):
+    c = 0
+    ans=''
+    for i in word:
+        if(c < word.count(i)):
+            c = word.count(i)
+            ans = i
+    return ans
+
+word = input('Введи слово: ')
+print(mostchar(word))
